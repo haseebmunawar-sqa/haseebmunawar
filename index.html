@@ -917,12 +917,12 @@
                 
                 <div class="project-card animate-item">
                     <div>
-                        <span class="project-tag">Web App (Logistics)</span>
-                        <h3 style="color: var(--secondary-color); margin-top: 0; font-size: 1.15rem;">ArtiCheck</h3>
+                        <span class="project-tag">Mobile/Web App (Logistics)</span>
+                        <h3 style="color: var(--secondary-color); margin-top: 0; font-size: 1.15rem;">Logistics App</h3>
                         <p style="font-size: 0.95rem;">Digital condition reporting workflows for art handling and logistics.</p>
                         <p style="font-size: 0.85rem; font-weight: 600; color: var(--primary-color);">Highlight: Validated precise reporting fields and data capture under various conditions.</p>
                     </div>
-                    <button class="report-button" onclick="openModal('ArtiCheck')">
+                    <button class="report-button" onclick="openModal('Logistics App')">
                         View Test Report <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -934,7 +934,7 @@
             <h2>Get In Touch</h2>
             <div id="contact-form-container" class="animate-item">
                 <p style="font-size: 1.05rem; line-height: 1.6; margin-bottom: 25px; text-align: center; color: var(--secondary-color); font-weight: 500;">
-Looking to integrate full-stack QA expertise into your project? Reach out directly or send a message below to start the conversation.
+Looking to integrate full-stack QA expertise into your project? Feel free to reach out directly or send a message below to start the conversation.
                 </p>
                 
                 <ul class="contact-details">
@@ -955,7 +955,7 @@ Looking to integrate full-stack QA expertise into your project? Reach out direct
                         </a>
                     </li>
                     <li>
-                        <a href="https://freelancerprofilenuxt.mesh.prod.platform.usw2.upwork/freelancers/~01c9d17fd386569018?mp_source=share" target="_blank">
+                        <a href="https://www.upwork.com/freelancers/~01c9d17fd386569018" target="_blank">
                             <i class="fas fa-briefcase"></i> Upwork
                         </a>
                         
@@ -986,7 +986,7 @@ Looking to integrate full-stack QA expertise into your project? Reach out direct
 
 
         <footer style="text-align: center; padding: 20px 0; font-size: 0.85rem; color: var(--text-light); border-top: 1px solid var(--border-color);">
-            <p style="margin: 0;">© 2025-2026 Haseeb Munawar. All rights reserved. | Software Quality Assurance Engineer Portfolio.</p>
+            <p style="margin: 0;">© 2025-2026 Haseeb Munawar. All rights reserved. | Software Quality Assurance Engineer.</p>
         </footer>
 
     </div>
@@ -1036,7 +1036,7 @@ Looking to integrate full-stack QA expertise into your project? Reach out direct
         });
 
         // ----------------------------------------------------
-        // 2. Smooth Scrolling (Updated for new single-column layout)
+        // 2. Smooth Scrolling 
         // ----------------------------------------------------
         document.querySelectorAll('.smooth-scroll, .nav-menu a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1055,7 +1055,7 @@ Looking to integrate full-stack QA expertise into your project? Reach out direct
         });
 
         // =================================================================
-        // === 3. Active Link Highlighting (REVISED LOGIC) ===
+        // === 3. Active Link Highlighting ===
         // =================================================================
         const sections = document.querySelectorAll('.content-section');
         const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
@@ -1075,7 +1075,6 @@ Looking to integrate full-stack QA expertise into your project? Reach out direct
                 currentActiveSectionId = intersecting[0].target.id;
             }
             
-            // Special check for the very top of the page: always highlight 'About'
             // The Summary section is technically not in the nav, so the first link is 'About'
             if (window.scrollY < 200) { 
                 currentActiveSectionId = 'about-section'; 
@@ -1094,9 +1093,7 @@ Looking to integrate full-stack QA expertise into your project? Reach out direct
         }, {
             root: null,
             threshold: 0, // Check intersection at 0% visibility
-            // Defines the "active" viewport area: 
-            // -60px top margin (below the header) 
-            // -80% bottom margin (only the top 20% of the screen is the target area)
+            
             rootMargin: "-60px 0px -80% 0px" 
         });
 
@@ -1117,17 +1114,17 @@ Looking to integrate full-stack QA expertise into your project? Reach out direct
  
         // --- NEW STRUCTURE FOR PROJECT DETAILS ---
         const projectDetails = {
-            // 1. SaaS Web App (Xupervisor)
+            // 1. SaaS Web App
             "SaaS Web App": {
                 objective: [
-                    "Objective: Ensure compliance integrity and seamless data transfer for enterprise license management (Project Xupervisor).",
+                    "Ensure compliance integrity and seamless data transfer for enterprise license management.",
                     "Validated all critical asset assignment, user authentication, and core reporting functions."
                 ],
                 findings: [
-                    "Critical usability bug: Non-functional Close (X) button on the modal (Now fixed and repositioned to top-right).",
-                    "Identified and resolved a concurrency bug that allowed license over-assignment (e.g., Usage 2/1).",
+                    "Identified and resolved concurrency bugs that allowed license over-assignment.",
                     "Validated Role-Based Access Controls (RBAC) across all administrative configuration views.",
-                    "Improved report generation performance by 30% for large datasets using asynchronous processing."
+                    "Improved report generation performance by 30% for large datasets using asynchronous processing.",
+                    "Enhanced the compliance software views"
                 ],
                 keyDocs: `
                     <div class="key-documents-buttons">
@@ -1139,10 +1136,10 @@ Looking to integrate full-stack QA expertise into your project? Reach out direct
                 `
             },
 
-            // 2. System Reporting Agent (Xearch Agent)
+            // 2. System Reporting Agent 
             "System Reporting Agent": {
                 objective: [
-                    "Objective: Validate the stability, accurate data capture, and reliable synchronization of the local desktop agent (Project Xearch Agent).",
+                    "Validate the stability, accurate data capture, and reliable synchronization of the local desktop agents.",
                     "Ensured installation integrity and accurate hardware/software inventory reporting to the server."
                 ],
                 findings: [
@@ -1155,10 +1152,10 @@ Looking to integrate full-stack QA expertise into your project? Reach out direct
                     `
             },
 
-            // 3. Cloud Reporting - Agent (Xync Agent)
+            // 3. Cloud Reporting - Agent 
             "Cloud Reporting - Agent": {
                 objective: [
-                    "Objective: Verify secure API connectivity and accurate parsing of complex cloud resource metadata from platforms like AWS and Azure (Project Xync Agent).",
+                    "Verify secure API connectivity and accurate parsing of complex cloud resource metadata from platforms like AWS and Azure.",
                     "Ensured reliability of the reporting frequency adherence based on defined business rules."
                 ],
                 findings: [
@@ -1196,7 +1193,7 @@ Looking to integrate full-stack QA expertise into your project? Reach out direct
             // 5. CRM
             "Customer Relationship Management (CRM)": {
                 objective: [
-                    "Objective: Validate the sales pipeline data flow, integrity of customer interactions, and accuracy of custom reporting tools.",
+                    "Validate the sales pipeline data flow, integrity of customer interactions, and accuracy of custom reporting tools.",
                     "Ensured seamless lead status transitions and correct calculation of sales metrics."
                 ],
                 findings: [
@@ -1209,8 +1206,8 @@ Looking to integrate full-stack QA expertise into your project? Reach out direct
                     `
             },
 
-            // 6. Articheck
-            "ArtiCheck": {
+            // 6. Logistics
+            "Logistics App": {
                 objective: [
                     "Objective: Test the platform’s unique art image processing pipeline and the integrity of ownership metadata.",
                     "Validated performance and security of the secure digital certification process for high-value assets."
@@ -1240,7 +1237,7 @@ Looking to integrate full-stack QA expertise into your project? Reach out direct
                 modalKeyDocs.innerHTML = '';
             } else {
                 // Set Title
-                modalTitle.textContent = `Test Report: ${projectName}`;
+                modalTitle.textContent = `Test Report - ${projectName}`;
                 
                 // Set Objective (2 lines)
                 modalObjective.innerHTML = `
